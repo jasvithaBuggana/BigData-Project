@@ -3,7 +3,7 @@ In this project, we'll be diving into the fascinating world of climate data and 
 
 ## What's in store? 🔍
 
-Get ready to embark on an exciting journey through three main phases:
+Three main phases:
 
 1. **Python**: We'll kick things off by building a nifty Python application that can extract Year and Temperature data from the original NCDC (National Climatic Data Center) records. This data will then be neatly tucked away in a text file for further processing.
 
