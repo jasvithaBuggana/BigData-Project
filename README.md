@@ -1,31 +1,31 @@
-## Integrated Big Data Analysis of NCDC Weather Records
-In this project, we'll be diving into the fascinating world of climate data and exploring some cool techniques to analyze and gain insights from it.
+### Climate Data Analysis Using NCDC Records
 
-## What's in store? 🔍
+#### Project Overview
 
-Three main phases:
+In this project, we delve into the realm of climate data analysis, utilizing the extensive records provided by the National Climatic Data Center (NCDC). Our goal is to extract, process, and derive meaningful insights from these records using a variety of powerful tools and techniques.
 
-1. **Python**: We'll kick things off by building a nifty Python application that can extract Year and Temperature data from the original NCDC (National Climatic Data Center) records. This data will then be neatly tucked away in a text file for further processing.
+#### Project Phases
 
-   To achieve this, I developed two Python scripts: `Project_Map.py` and `Project_Reduce.py`. The mapper script extracts the Year and Temperature information from the raw data, while the reducer script aggregates and formats the data for output.
+1. **Data Extraction with Python and Hadoop**
+   - We kickstart the project by developing Python scripts (`Project_Map.py` and `Project_Reduce.py`) to extract year and temperature data from raw NCDC records. Using Hadoop Streaming, we efficiently process large datasets and store the results for further analysis.
 
-   After transferring the `CourseProjectData.zip` files to HDFS, I ran the Python application using Hadoop Streaming, specifying the input data, output directory, and the mapper and reducer scripts. The output was then copied from HDFS to the local filesystem as `js3225_output.txt`.
+2. **Data Wrangling with Pig**
+   - Moving into the Pig environment, we load our preprocessed data and leverage its data wrangling capabilities. Here, we focus on finding the highest and lowest temperatures recorded for each year, employing aggregation functions (`MAX` and `MIN`) to uncover key insights.
 
-2. **Pig**: Next up, we'll load our freshly created text file into the powerful Pig environment. Here, we'll unleash some serious data wrangling skills to find the highest and lowest temperatures for each year.
+3. **Statistical Analysis with Hive**
+   - Finally, utilizing Hive, we establish a structured data table (`js3225table`) to facilitate detailed statistical analysis. By computing the average temperature for each year using the `AVG` function and grouping by year, we reveal long-term temperature trends and patterns.
 
-   In the Pig environment, I loaded the `js3225_output.txt` file, grouped the records by year, and used the `MAX` and `MIN` functions to determine the highest and lowest temperatures for each year group. The results were then displayed using the `DUMP` command.
+#### Tools Required
 
-3. **Hive**: Last but not least, we'll dive into the world of Hive and use it to calculate the average temperature for each year. Get ready to uncover some fascinating temperature trends!
+- Python: Essential for initial data extraction and preprocessing.
+- Hadoop: Provides the distributed computing framework necessary for handling large-scale data processing.
+- Pig: Enables flexible data manipulation and aggregation, crucial for deriving specific insights.
+- Hive: Facilitates structured querying and analysis of data stored in Hadoop Distributed File System (HDFS), ideal for statistical calculations and trend identification.
 
-   In Hive, I created a table `js3225table` with the appropriate schema to match the `js3225_output.txt` file. After loading the data into the table, I used a simple `SELECT` query with the `AVG` function and `GROUP BY` clause to compute the average temperature for each year.
+#### Conclusion
 
-## Prerequisites 🛠️
+Through this project, we aim to not only showcase the capabilities of modern data analytics tools but also to uncover valuable climate trends and patterns hidden within the vast NCDC records. By following these phases, we empower researchers and climate enthusiasts alike to explore and interpret significant climate data with precision and efficiency.
 
-Before we get started, make sure you have the following tools installed and ready to go:
+---
 
-- Python
-- Hadoop
-- Pig
-- Hive
-
-
+Feel free to adjust the details further based on your project specifics and achievements!
