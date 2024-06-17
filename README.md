@@ -1,5 +1,5 @@
 ## Integrated Big Data Analysis of NCDC Weather Records
-## In this project, we'll be diving into the fascinating world of climate data and exploring some cool techniques to analyze and gain insights from it.
+In this project, we'll be diving into the fascinating world of climate data and exploring some cool techniques to analyze and gain insights from it.
 
 ## What's in store? 🔍
 
