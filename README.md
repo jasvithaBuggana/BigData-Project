@@ -28,4 +28,4 @@ Before we get started, make sure you have the following tools installed and read
 - Pig
 - Hive
 
-... (rest of the README remains the same)
+
