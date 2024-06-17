@@ -11,7 +11,7 @@ Get ready to embark on an exciting journey through three main phases:
 
    After transferring the `CourseProjectData.zip` files to HDFS, I ran the Python application using Hadoop Streaming, specifying the input data, output directory, and the mapper and reducer scripts. The output was then copied from HDFS to the local filesystem as `js3225_output.txt`.
 
-2. **Pig**: Next up, we'll load our freshly created text file into the powerful Pig environment. Here, we'll unleash some serious data wrangling skills to find the highest and lowest temperatures for each year. Brace yourselves for some temperature extremes!
+2. **Pig**: Next up, we'll load our freshly created text file into the powerful Pig environment. Here, we'll unleash some serious data wrangling skills to find the highest and lowest temperatures for each year.
 
    In the Pig environment, I loaded the `js3225_output.txt` file, grouped the records by year, and used the `MAX` and `MIN` functions to determine the highest and lowest temperatures for each year group. The results were then displayed using the `DUMP` command.
 
